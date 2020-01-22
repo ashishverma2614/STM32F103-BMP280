@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"scani2c\system_stm32f1xx.o"
+"scani2c\stm32f1xx_hal_gpio_ex.o"
+"scani2c\stm32f1xx_hal_i2c.o"
+"scani2c\stm32f1xx_hal_tim.o"
+"scani2c\stm32f1xx_hal_tim_ex.o"
+"scani2c\stm32f1xx_hal_uart.o"
+"scani2c\stm32f1xx_hal.o"
+"scani2c\stm32f1xx_hal_rcc.o"
+"scani2c\stm32f1xx_hal_rcc_ex.o"
+"scani2c\stm32f1xx_hal_gpio.o"
+"scani2c\stm32f1xx_hal_dma.o"
+"scani2c\stm32f1xx_hal_cortex.o"
+"scani2c\stm32f1xx_hal_pwr.o"
+"scani2c\stm32f1xx_hal_flash.o"
+"scani2c\stm32f1xx_hal_flash_ex.o"
+"scani2c\startup_stm32f103xb.o"
+"scani2c\main.o"
+"scani2c\stm32f1xx_it.o"
+"scani2c\stm32f1xx_hal_msp.o"
+"scani2c\bmp280.o"
+"scani2c\retarget_io.o"
+--library_type=microlib --strict --scatter "ScanI2C\ScanI2C.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ScanI2C.map" -o ScanI2C\ScanI2C.axf

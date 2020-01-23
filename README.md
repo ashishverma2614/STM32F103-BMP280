@@ -1,4 +1,4 @@
-# STM32F103-BMP180
+# STM32F103-BMP280
 code written for BMP280 for fetching temperature , pressure and calculating Altitude. 
 
 NOTE: While creating project i started as I2C scanner so inside it is named as I2c Scanner but its is code for BMP280 
